@@ -19,7 +19,7 @@ class ChessBoard:
                 else:
                     print("黑",end="")
             print()
-
+#Austin very happy
 class Player:
     def __init__(self,name,color):
         self.__name=name
@@ -29,12 +29,7 @@ class Player:
     def getColor(self):
         return self.__color
 
-    def putDownChess(self,board,x,y):
-        if board.getGrid()[x][y]==None:
-            board.getGrid()[x][y]=Chess(self.__color)
-            return True
-        else:
-            return False
+
 
 class Referee:
     def __init__(self,name):
